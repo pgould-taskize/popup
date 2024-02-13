@@ -10,11 +10,13 @@ import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.router.PreserveOnRefresh;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoIcon;
 
 @Route(value = "header-footer", layout = MainLayout.class)
 @CssImport(value = "./styles/custom-popup-style.css", themeFor = "vcf-popup-overlay")
+@PreserveOnRefresh
 public class HeaderAndFooterView extends VerticalLayout {
 
     public HeaderAndFooterView() {
